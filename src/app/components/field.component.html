@@ -1,0 +1,13 @@
+<!-- <ul> -->
+  <!-- <li *ngFor="let pc of playersCards; let idx = index;"> -->
+    <table *ngFor="let pc of playersCards; let idx = index;">
+      <tr>
+        Player {{idx + 1}}:
+        <td *ngFor="let c of pc; let idx = index;">
+          <img [src] = "c.imageUrl" width="50px">
+        </td>
+      </tr>
+      <br>
+    </table>
+  <!-- </li> -->
+<!-- </ul> -->
